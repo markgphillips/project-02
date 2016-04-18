@@ -84,8 +84,6 @@ footer h2 {
 .credits {
   display: flex;
   padding: .5rem 0 1.5rem;
-}
-.credits p, .to-top {
   justify-content: space-between;
 }
 
