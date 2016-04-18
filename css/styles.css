@@ -1,0 +1,90 @@
+/** General Styles ********************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background: #fafafa;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+img {
+  max-width: 100%;
+}
+
+#container {
+  padding: 0 1.875em;
+  background: #fff;
+}
+
+header, footer {
+  padding: 1em;
+}
+
+header p, #contact p {
+  color: #7f7f7f;
+}
+
+.navigation li  {
+  text-transform: uppercase;
+  background: #fff;
+  margin-bottom: 5px;
+  padding: .7em;
+}
+
+.profile-pic {
+  width: 70%;
+  padding-top: 2.5em;
+}
+
+#portfolio {
+  background: #fff;
+}
+
+.credits {
+  padding: .5em 0 1.5em;
+}
+
+.name {
+  float: left;
+  margin: 0;
+}
+
+.footer-links {
+  display: none;
+  text-transform: uppercase;
+}
+
+.to-top {
+  text-transform: uppercase;
+  float: right;
+}
+/** Media Queries ********************/
+
+@media (min-width: 500px) {
+  .to-top {
+    display: none;
+  }
+
+  .footer-links {
+    display: block;
+    float: right;
+  }
+}
+
+@media (min-width: 769px) {
+  #container, header, footer {
+    width: 80%;
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+}
+
+fafafa
