@@ -16,7 +16,11 @@ p {
   padding-bottom: 1rem;
 }
 
-a:link, a:visited, a:hover, a:active, h2 {
+a {
+  color: #444;
+}
+
+.main-nav a, h2 {
   color: #444;
   font-weight: 800;
   font-size: .92rem;
@@ -65,7 +69,7 @@ header p, #contact p {
   padding: 1rem;
 }
 
-#banner p, #footer p {
+#banner p, footer p {
   color: #888;
 }
 
@@ -81,10 +85,20 @@ footer h2 {
   padding: 1rem;
 }
 
+.footer a {
+  text-transform: initial;
+}
+
 .credits {
   display: flex;
   padding: .5rem 0 1.5rem;
   justify-content: space-between;
+  font-weight: bold;
+  font-size: .87em;
+}
+
+a.to-top {
+    font-size: .87em;
 }
 
 .footer-links {
@@ -95,17 +109,76 @@ footer h2 {
 .to-top {
   text-transform: uppercase;
 }
+
+hr {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.bold {
+  font-weight: 600;
+  color: #888;
+}
+
+
 /** Media Queries ********************/
 
 @media (min-width: 768px) {
 
-  .main-header, .main-nav {
+ .main-header {
+  flex-direction: column;
+  align-items: center;
+  }
+
+ .main-header, .main-nav {
     display: flex;
   }
 
-  .main-header {
-    flex-direction: column;
-    align-items: center;
+  .name {
+    padding-top: 1em;
+  }
+
+  .main-nav li {
+    background: #fafafa;
+  }
+
+  #banner {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .profile-pic {
+    padding: 1em;
+  }
+
+  #banner p, footer p {
+    font-size: 1.2em;
+  }
+
+  #container {
+    padding: 1.3rem;
+  }
+
+  .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-items li {
+    width: calc(100% * (1/2) - 16px);
+    margin: 0 8px;
+    flex-grow: 1;
+  }
+
+  .skill-items {
+    display: flex;
+  }
+
+  .skill-items li {
+    width: calc(100% * (1/3) - 10px);
+    margin: 0 5px;
+    flex-grow: 1;
   }
 
   .to-top {
@@ -116,9 +189,17 @@ footer h2 {
     display: block;
     float: right;
   }
+  .footer-links li a {
+    padding-left: 10px;
+  }
 }
 
 @media (min-width: 1024px) {
+
+  .main-header {
+  flex-direction: row;
+  justify-content: space-between;
+  }
 
   #container, header, footer {
     /*width: 80%;*/
@@ -126,8 +207,19 @@ footer h2 {
     margin: 0 auto;
   }
 
-  .main-header {
-    flex-direction: row;
-    justify-content: space-between;
+  .portfolio-items li {
+    width: calc(100% * (1/3) - 20px);
+    margin: 0 10px;
+    flex-grow: 1;
+  }
+
+  .skill-items {
+    display: flex;
+  }
+
+  .skill-items li {
+    width: calc(100% * (1/3) - 10px);
+    margin: 0 5px;
+    flex-grow: 1;
   }
 }
