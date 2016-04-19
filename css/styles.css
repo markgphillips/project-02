@@ -196,15 +196,18 @@ hr {
 
 @media (min-width: 1024px) {
 
+  .wrapper {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+
   .main-header {
   flex-direction: row;
   justify-content: space-between;
   }
 
-  #container, header, footer {
-    /*width: 80%;*/
-    max-width: 1260px;
-    margin: 0 auto;
+  #container, header, #banner, footer {
+    margin: 0 30px;
   }
 
   .portfolio-items li {
