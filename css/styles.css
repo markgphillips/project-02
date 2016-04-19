@@ -48,7 +48,15 @@ img {
 
 #container {
   padding: 0 1rem;
-  background: #fff;
+}
+
+#container, #portfolio, #skills {
+  background: linear-gradient(#61d686, #79d697);
+  color: #fff;
+}
+
+#container p, #portfolio p, #skills p, #container h2, #portfolio h2, #skills h2 {
+  color: #fff;
 }
 
 header, footer {
@@ -75,10 +83,6 @@ header p, #contact p {
 
 .profile-pic {
   width: 70%;
-}
-
-#portfolio, #skills {
-  background: #fff;
 }
 
 footer h2 {
@@ -181,6 +185,11 @@ hr {
     flex-grow: 1;
   }
 
+  .contact-info {
+    width: 75%;
+    margin: 0 auto;
+}
+
   .to-top {
     display: none;
   }
@@ -224,5 +233,10 @@ hr {
     width: calc(100% * (1/3) - 10px);
     margin: 0 5px;
     flex-grow: 1;
+  }
+
+  .contact-info {
+    width: 50%;
+    margin: 0 auto;
   }
 }
